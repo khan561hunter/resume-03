@@ -1,4 +1,4 @@
-"use strict";
+
 window.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById("resume-form");
     var output = document.getElementById("resume-output");

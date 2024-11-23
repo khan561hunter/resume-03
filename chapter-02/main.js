@@ -1,12 +1,12 @@
 
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById("resume-form");
     var output = document.getElementById("resume-output");
     var personalInfoOutput = document.getElementById("personal-info-output");
     var educationOutput = document.getElementById("education-output");
     var workExperienceOutput = document.getElementById("work-experience-output");
     var skillsOutput = document.getElementById("skills-output");
-    var profilePictureOutput = document.getElementById("profile-picture");
+    
     var generateResumeButton = document.getElementById("generateResume");
     if (generateResumeButton) {
         generateResumeButton.addEventListener("click", function () {
@@ -19,10 +19,10 @@ window.addEventListener('DOMContentLoaded', function () {
             var workplace = ((_f = document.getElementById("comp")) === null || _f === void 0 ? void 0 : _f.value) || '';
             var workplace2 = ((_g = document.getElementById("compa")) === null || _g === void 0 ? void 0 : _g.value) || '';
             var skills = ((_h = document.getElementById("hobby")) === null || _h === void 0 ? void 0 : _h.value) || '';
-            var profilePictureInput = document.getElementById("profilePicture");
+            
             // Display the generated resume
             if (personalInfoOutput) {
-                personalInfoOutput.innerHTML = "\n                    <h3>Personal Information</h3>\n                    <p>Name: ".concat(name, "</p>\n                    <p>Email: ").concat(email, "</p>\n                    <p>Phone: ").concat(phone, "</p>\n                    \n                ");
+                personalInfoOutput.innerHTML = "\n                    <h3>Personal Information</h3>\n                    <p>Name: ".concat(name, "</p>\n                    <p>Email: ").concat(email, "</p>\n                    <p>Phone: ").concat(phone, "</p>\n                               ");
             }
             if (educationOutput) {
                 educationOutput.innerHTML = "\n                    <h3>Education</h3>\n                    <p>School: ".concat(school, "</p>\n                    <p>University : ").concat(univeristy, "</p>\n                ");

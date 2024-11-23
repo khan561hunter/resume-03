@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone-02</title>
+    <link rel="icon" href="data:,">
+    <link href="./main.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    </style>
+    
+</head>
+<body>
+    <script src="./main.js"></script>
+    <div class="container">
+        <div class="main">
+            <h1 class="heading">Porfolio Form</h1>
+            <div class="fields" id="resume-form">
+                <div class="picture">
+                    <label for="profilePicture">Upload your profile picture:</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+                    
+                   
+                </div>
+                
+                <h3>Personal Information</h3>
+                <div class="name">
+                    <h4>Name</h4>
+                    <input type="text" id="pname" name="pname" placeholder="Enter Your Name" required><br/>
+                    
+                </div>
+                <div class="Email">
+                    <h4>Email</h4>
+                    <input type="email" id="p_email" name="p_email" placeholder="Enter Your Email" required>
+                    
+                </div>
+                <div class="Contact">
+                    <h4>Phone</h4>
+                    <input type="number" id="p_phone " name="p_phone" placeholder="Enter Your contact number" required>
+                </div>
+                <h3 class="edu">Education</h3>
+                <div class="school">
+                    <h4>School</h4>
+                    <input type="text" id="p_school" name="p_school" placeholder="Which School :">
+                </div>
+                <div class="university">
+                    <h4>University</h4>
+                    <input type="text" id="p_uni" name="p_uni" placeholder="Which University :">
+                </div>
+                <h3 class="ski">Skills</h3>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    
+                    <input type="text" id="hobby" name="hobby" placeholder="Your Skills">
+                     
+                </div>
+                <h3 class="work3">Work Experience</h3>
+                <div class="work">
+                    <h4>Company</h4>
+                    <input type="text" id="comp" name="comp" placeholder="Company Name" re>
+                </div>
+                <div class="work2">
+                    <h4>Any Another Company</h4>
+                    <input type="text" id="compa" name="compa" placeholder="Company Name">
+
+                </div>
+                <button type="button" id="generateResume">Generate Resume</button>
+            </div>
+            <div id="resume-output" class="resume hidden">
+                <h2>Generated Resume</h2>
+                <section id="profile-picture" contenteditable="true"></section>
+                <section id="personal-info-output" contenteditable="true"></section>
+                <section id="education-output" contenteditable="true"></section>
+                <section id="work-experience-output" contenteditable="true"></section>
+                <section id="skills-output" contenteditable="true"></section>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

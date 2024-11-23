@@ -33,21 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
             if (skillsOutput) {
                 skillsOutput.innerHTML = "\n                    <h3>Skills</h3>\n                    <p>Your skills : ".concat(skills, "</p>\n                ");
             }
-            if (((_j = profilePictureInput === null || profilePictureInput === void 0 ? void 0 : profilePictureInput.files) === null || _j === void 0 ? void 0 : _j[0]) && profilePictureOutput) {
-                var file = profilePictureInput.files[0];
-                var reader = new FileReader();
-                reader.onload = function (event) {
-                    var _a;
-                    var img = document.createElement("img");
-                    img.src = (_a = event.target) === null || _a === void 0 ? void 0 : _a.result;
-                    img.alt = "Profile Picture";
-                    img.style.maxWidth = "200px"; // Limit the image size
-                    img.style.borderRadius = "130px";
-                    profilePictureOutput.innerHTML = ""; // Clear previous image
-                    profilePictureOutput.appendChild(img);
-                };
-                reader.readAsDataURL(file);
-            }
+            
             if (output) {
                 output.classList.remove("hidden");
             }
